@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Registrar almacenes</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <table>
+                <tr>
+                    <td>Distrito</td>
+                    <td><h:inputText value = "#{almacen.district}"/></td>
+                </tr>
+                <tr>
+                    <td>Responsable</td>
+                    <td><h:inputText value = "#{almacen.responsible}"/></td>
+                </tr>
+                <tr>              
+                    <td><h:commandButton value = "Registrar" action = "#{almacenBean.registrarAlmacen(almacen)}"/></td>
+                    <td><h:commandButton type = "reset" value = "Limpiar"/></td>
+                </tr>
+            </table>
+        </h:form>
+    </h:body>
+</html>
+
